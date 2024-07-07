@@ -10,7 +10,7 @@ from PyQt5.QtCore import QObject, pyqtSignal
 from gridplayer.params import env
 
 if env.IS_WINDOWS:
-    S_NAME, S_TYPE = r"\\.\pipe\gridplayer-fileopen", "AF_PIPE"
+    S_NAME, S_TYPE = r"\\.\pipe\gridplayer-fileopen-1", "AF_PIPE"
 elif env.IS_FLATPAK:
     S_NAME, S_TYPE = (
         str(env.FLATPAK_RUNTIME_DIR / "gridplayer-fileopen.socket"),
